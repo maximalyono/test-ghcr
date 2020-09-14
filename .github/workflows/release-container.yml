@@ -1,8 +1,7 @@
 name: Release-Container
 on:
-  push:
-    branches:
-    - master
+  workflow_dispatch:
+    types: example-event
 jobs:
   deploy-app:
     runs-on: ubuntu-latest
