@@ -12,7 +12,14 @@ jobs:
       id: tags
       run: echo ::set-output name=tag::${GITHUB_SHA}
     - name: Build and push Docker image
-      run: docker image build -t test-ghcr:${{ steps.tags.outputs.tag }} .
+      uses: docker/build-push-action@v1
+      username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          repository: test-ghcr/package-ghcr
+          tag_with_ref: true
+      
+      #run: docker image build -t test-ghcr:${{ steps.tags.outputs.tag }} .
       
  #   - name: Release
  #     env:
