@@ -20,7 +20,8 @@ jobs:
 #        repository: test-ghcr/package-ghcr
 #        tag_with_ref: true
         push: true
-        tags: user/app:latest      
+        tags: user/app:latest
+        file: ./Dockerfile      
       #run: docker image build -t test-ghcr:${{ steps.tags.outputs.tag }} .
       
  #   - name: Release
