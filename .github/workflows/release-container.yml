@@ -13,9 +13,7 @@ jobs:
       run: echo ::set-output name=tag::${GITHUB_SHA}
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
-      with:
-        push: true
-        tags: user/app:latest  
+      with:  
 #        username: ${{ github.actor }}
 #        password: ${{ secrets.TOKEN_FOR_GHCR }}
 #        registry: docker.pkg.github.com
