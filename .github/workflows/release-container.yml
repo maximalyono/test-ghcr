@@ -18,9 +18,9 @@ jobs:
 #        password: ${{ secrets.TOKEN_FOR_GHCR }}
         registry: docker.pkg.github.com
         repository: test-ghcr/package-ghcr
-        tag_with_ref: true
+#        tag_with_ref: true
         push: true
-      
+        tags: user/app:latest      
       #run: docker image build -t test-ghcr:${{ steps.tags.outputs.tag }} .
       
  #   - name: Release
