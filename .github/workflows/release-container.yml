@@ -14,10 +14,10 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v1
       username: ${{ github.actor }}
-          password: ${{ secrets.TOKEN_FOR_GHCR }}
-          registry: docker.pkg.github.com
-          repository: test-ghcr/package-ghcr
-          tag_with_ref: true
+      password: ${{ secrets.TOKEN_FOR_GHCR }}
+      registry: docker.pkg.github.com
+      repository: test-ghcr/package-ghcr
+      tag_with_ref: true
       
       #run: docker image build -t test-ghcr:${{ steps.tags.outputs.tag }} .
       
