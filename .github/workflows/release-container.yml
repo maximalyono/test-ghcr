@@ -13,6 +13,7 @@ jobs:
       with:  
         username: ${{ github.actor }}
         password: ${{ secrets.TOKEN_FOR_GHCR }}
-        registry: ghcr.io/maximalyono/yuhu
+        #registry: ghcr.io/maximalyono/yuhu
+        registry: ghcr.io
         tag_with_ref: true
         tag_with_sha: true
