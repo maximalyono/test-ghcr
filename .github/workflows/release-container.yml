@@ -19,7 +19,7 @@ jobs:
 #        registry: docker.pkg.github.com
         registry: ghcr.io/maximalyono/yuhu
 #        repository: test-ghcr/package-ghcr
-        tags: yuhu
+#        tags: yuhu
         tag_with_ref: true
 #        push: true
 #        tags: user/app:latest
