@@ -16,17 +16,7 @@ jobs:
       with:  
         username: ${{ github.actor }}
         password: ${{ secrets.TOKEN_FOR_GHCR }}
-#        registry: docker.pkg.github.com
         registry: ghcr.io/maximalyono/yuhu
-#        repository: test-ghcr/package-ghcr
+
 #        tags: yuhu
-        tag_with_ref: true
-#        push: true
-#        tags: user/app:latest
-#        file: ./Dockerfile      
-      #run: docker image build -t test-ghcr:${{ steps.tags.outputs.tag }} .
-      
- #   - name: Release
- #     env:
- #       HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
- #     run: heroku container:release -a palembang-digital web
+#        tag_with_ref: true
