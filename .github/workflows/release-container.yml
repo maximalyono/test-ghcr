@@ -17,7 +17,7 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.TOKEN_FOR_GHCR }}
         registry: docker.pkg.github.com
-        repository: test-ghcr/package-ghcr
+#        repository: test-ghcr/package-ghcr
         tag_with_ref: true
 #        push: true
 #        tags: user/app:latest
