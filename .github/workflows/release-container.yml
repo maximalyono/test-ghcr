@@ -18,6 +18,7 @@ jobs:
         password: ${{ secrets.TOKEN_FOR_GHCR }}
         registry: docker.pkg.github.com
 #        repository: test-ghcr/package-ghcr
+        tags: maximalyono/test-ghcr/test-ghcr-pkg
         tag_with_ref: true
 #        push: true
 #        tags: user/app:latest
